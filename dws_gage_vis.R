@@ -1,4 +1,5 @@
 # To visualize data scraped from DWS gages near Musina
+# Figure S03
 
 library(tidyverse)
 library(latex2exp)
