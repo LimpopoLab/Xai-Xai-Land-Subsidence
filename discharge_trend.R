@@ -76,7 +76,7 @@ rivers <- grid::grid.draw(rbind(gE38,gE35))
 
 
 ######################### Beitbridge #############################################
-x <- read_csv("beitbridge_discharge.csv")
+x <- read_csv("beitbridge_discharge.csv") # QC'd monthly data
 y <- x %>%
      select(Year,`Height (m)`) %>%
      rename(height=`Height (m)`)
