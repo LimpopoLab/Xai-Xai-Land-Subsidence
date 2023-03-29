@@ -1,25 +1,28 @@
+# InSAR visualization
+# Figures 3, 4, S06, S08, S10, S12, S14
+
 library(readr)
 library(dplyr)
 library(ggplot2)
 
-allYears <- read_csv("/Users/davidkahler/Documents/Hydrology_and_WRM/Limpopo_Basin_Study/Land_Movement_Gabi/Results_AllPixels/AllYears_FinalResults.csv")
-r2017 <- read_csv("/Users/davidkahler/Documents/Hydrology_and_WRM/Limpopo_Basin_Study/Land_Movement_Gabi/Results_AllPixels/2017_AllPixelsInRV.csv")
+allYears <- read_csv("Results_AllPixels/AllYears_FinalResults.csv")
+r2017 <- read_csv("Results_AllPixels/2017_AllPixelsInRV.csv")
 r2017 <- r2017 %>%
      select(VEL,V_STDEV,Vel_cm_yr) %>%
      mutate(year="2017")
-r2018 <- read_csv("/Users/davidkahler/Documents/Hydrology_and_WRM/Limpopo_Basin_Study/Land_Movement_Gabi/Results_AllPixels/2018_AllPixelsInRV.csv")
+r2018 <- read_csv("Results_AllPixels/2018_AllPixelsInRV.csv")
 r2018 <- r2018 %>%
      select(VEL,V_STDEV,Vel_cm_yr) %>%
      mutate(year="2018")
-r2019 <- read_csv("/Users/davidkahler/Documents/Hydrology_and_WRM/Limpopo_Basin_Study/Land_Movement_Gabi/Results_AllPixels/2019_AllPixelsInRV.csv")
+r2019 <- read_csv("Results_AllPixels/2019_AllPixelsInRV.csv")
 r2019 <- r2019 %>%
      select(VEL,V_STDEV,Vel_cm_yr) %>%
      mutate(year="2019")
-r2020 <- read_csv("/Users/davidkahler/Documents/Hydrology_and_WRM/Limpopo_Basin_Study/Land_Movement_Gabi/Results_AllPixels/2020_AllPixelsInRV.csv")
+r2020 <- read_csv("Results_AllPixels/2020_AllPixelsInRV.csv")
 r2020 <- r2020 %>%
      select(VEL,V_STDEV,Vel_cm_yr) %>%
      mutate(year="2020")
-r2021 <- read_csv("/Users/davidkahler/Documents/Hydrology_and_WRM/Limpopo_Basin_Study/Land_Movement_Gabi/Results_AllPixels/2021_AllPixelsInRV.csv")
+r2021 <- read_csv("Results_AllPixels/2021_AllPixelsInRV.csv")
 r2021 <- r2021 %>%
      select(VEL,V_STDEV,Vel_cm_yr) %>%
      mutate(year="2021")
