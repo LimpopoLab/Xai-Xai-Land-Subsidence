@@ -60,7 +60,7 @@ modBeitbridge <- lm(a$annual.tot ~ a$hydro_year)
 #      a$hydro_year  -139060814    -32260553
 
 ggplot(a) + #   ann_flow <- 
-     geom_point(aes(x=hydro_year,y=(annual.tot/1e9))) +
+     geom_point(aes(x=hydro_year,y=(annual.tot/1e9))) + # data in cumecs, display in trillions of cumecs
      #geom_hline(yintercept = ave.ann.flow) +
      geom_smooth(aes(x=hydro_year,y=(annual.tot/1e9)), method = "lm", se = TRUE, color='blue') +
      xlim(c(1955,2022)) +
